@@ -17,8 +17,6 @@ window.onload = function() {
 	map.setZoom(16)
 	map.panTo([ 36.06165,136.223546 ]) // 福井駅
 	
-	map.addIcon(36.062263,136.222962,"福井駅", "basu.png", 90, 90)//バス
-	
 	map.addIcon(36.062263,136.222962,"福井駅", "basutei.png", 64, 64)
 	map.addIcon(36.062782,136.216431,"東映前", "basutei.png", 64, 64)
 	map.addIcon(36.063251,136.21402,"片町入口", "basutei.png", 64, 64)
@@ -211,6 +209,8 @@ window.onload = function() {
        map.addIcon(36.083336,136.226501,"幾久", "basutei.png", 64, 64)	
        map.addIcon(36.083042,136.226257,"幾久", "basutei.png", 64, 64)	
        map.addIcon(36.083336,136.226501,"幾久", "basutei.png", 64, 64)
+	
+	map.addIcon(36.062263,136.222962,"福井駅", "basu.png", 90, 90)//バス
 	
 	// 線分を地図上に表示する
 	map.addLayer(L.polyline([
