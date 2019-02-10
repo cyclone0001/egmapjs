@@ -28,19 +28,8 @@ window.onload = function() {
 	map.setZoom(16)
 	map.panTo([ 36.06165,136.223546 ]) // 福井駅
 	
-	var query = `
-		prefix ic: <http://imi.go.jp/ns/core/rdf#>
-		prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-		select ?uri ?name ?lat ?lng {
-			?uri ic:名称 [ ic:表記 ?name ].
-			?uri ic:地理座標 [ ic:緯度 ?lat; ic:経度 ?lng; ].
-			filter(contains(str(?name),'停'))
-		} limit 100
-	add.mapIcon(lat, lng, name, "icon-carparking.png" ,64 ,64)
-	`
-	}
-
-</script>
+	map.addIcon( 36.062263 , 136.222962  "福井駅")
+	</script>
 <style>
 
 body { margin: 0; font-family: sans-serif; text-align: center; }
