@@ -12,6 +12,17 @@
 <script src="https://code4fukui.github.io/egmapjs/sparql.js"></script>
 <script>"use strict"
 
+rosen col
+#01 //コミュニティバス
+#02 //岡保コミュニティバス
+
+var getRosen = function(callback) {
+	callback({"rosen":[
+		{"id":"1","name":"コミュニティバス",col:"#e1272a"},
+		{"id":"2","name":"岡保コミュニティバス",col:"#39821b"},
+	]});
+};
+	
 window.onload = function() {
 	var map = initMap('mapid')
 	map.setZoom(16)
