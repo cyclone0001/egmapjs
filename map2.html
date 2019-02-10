@@ -17,7 +17,12 @@ window.onload = function() {
 	map.setZoom(16)
 	map.panTo([ 35.943560,136.188917 ]) // 鯖江駅
 	map.addIcon(35.943560,136.188917, "鯖江駅")
-	jsonp_callback({"busstop":[{"id":"1","name":"JR鯖江駅（１番のりば）","latitude":35.943302,"longitude":136.188187},{"id":"2","name":"本町1丁目（東）","latitude":35.944408,"longitude":136.185257},・・・]})
+	// java.io.Fileから
+	Workbook workbook = WorkbookFactory.create(new File("C:\Users\home\Desktop\keifuku_bussstop.xls"));
+
+	// java.io.inputStream
+	InputStream inputStream = new FileInputStream("C:\Users\home\Desktop\keifuku_bussstop.xls");
+	Workbook workbook = WorkbookFactory.create(inputStream);
 }
 
 </script>
